@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.dark,
         useMaterial3: true,
       ),
+      themeMode: ThemeMode.system, // Use system theme mode
       home: HomeScreen(),
     );
   }

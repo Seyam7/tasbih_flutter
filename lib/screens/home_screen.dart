@@ -23,9 +23,10 @@ class HomeScreen extends StatelessWidget {
         itemCount: 5,
         itemBuilder: (_, index) {
           return ListTile(
+            contentPadding: EdgeInsets.all(10),
+            tileColor: Colors.green[50],
             title: Text('Tasbih ${index + 1}'),
             subtitle: Text('Count: ${index * 10}'),
-            trailing: Icon(Icons.check_circle, color: Colors.green),
           );
         },
       ),
