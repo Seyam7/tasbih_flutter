@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasbih_flutter/widgets/zikr_tile_widget.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -19,17 +20,7 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: ListView.builder(
-        itemCount: 5,
-        itemBuilder: (_, index) {
-          return ListTile(
-            contentPadding: EdgeInsets.all(10),
-            tileColor: Colors.green[50],
-            title: Text('Tasbih ${index + 1}'),
-            subtitle: Text('Count: ${index * 10}'),
-          );
-        },
-      ),
+      body: ZikrTileWidget(),
     );
   }
 }
