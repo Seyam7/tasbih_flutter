@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tasbih_flutter/colors.dart';
 import 'package:tasbih_flutter/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -20,10 +21,10 @@ class _SplashScreenState extends State<SplashScreen> {
 
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green[300],
+      backgroundColor: AppColors.splashBg,
       body: Center(
         child: Image(
-            image: AssetImage('assets/tasbih_splash.png'),
+            image: AssetImage('assets/images/tasbih_splash.png'),
         ),
       ),
     );
